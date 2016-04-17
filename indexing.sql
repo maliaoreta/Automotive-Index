@@ -1,10 +1,11 @@
 \timing
 
-CREATE INDEX by_make_code ON car_models(make_code);
-CREATE INDEX by_model_code ON car_models(model_code);
+-- CREATE INDEX by_make_code ON car_models(make_code);
+-- CREATE INDEX by_model_code ON car_models(model_code);
 
 -- SELECT DISTINCT make_title FROM car_models WHERE make_code = 'LAM';
 -- runtime w/o index 34.526 ms
+-- runtime w/index 1.648 ms
 
 -- SELECT DISTINCT model_title FROM car_models WHERE make_code = 'NISSAN' AND model_code = 'GT-R';
 -- runtime w/o index 34.817
