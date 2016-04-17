@@ -11,3 +11,6 @@
 
 -- SELECT * FROM car_models WHERE year BETWEEN 2010 AND 2015;
 -- runtime w/o index 90.972 ms
+
+-- SELECT * FROM car_models WHERE year = 2010;
+--  Runtime w/o index 46.596
