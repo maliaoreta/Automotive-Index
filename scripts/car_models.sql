@@ -1,10 +1,7 @@
 -- db indexed_cars
 \timing
 
--- DROP TABLE car_models;
-
-CREATE INDEX by_make_code ON car_models(make_code);
-CREATE INDEX by_model_code ON car_models(model_code);
+DROP TABLE car_models;
 
 CREATE TABLE IF NOT EXISTS car_models
 (
@@ -15,4 +12,7 @@ CREATE TABLE IF NOT EXISTS car_models
  model_title character varying(125) NOT NULL,
  year integer NOT NULL,
  PRIMARY KEY (id)
-)
+);
+
+CREATE INDEX by_make_code ON car_models(make_code);
+CREATE INDEX by_model_code ON car_models(model_code);
