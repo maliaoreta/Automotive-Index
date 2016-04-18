@@ -16,6 +16,7 @@
 -- SELECT make_code, model_code, model_title, year FROM car_models WHERE make_code = 'LAM';
 -- runtime w/o index 31.489 ms
 -- runtime w/ index 2.914 ms
+-- runtime w/index in script 1.731ms
 
 -- SELECT * FROM car_models WHERE year BETWEEN 2010 AND 2015;
 -- runtime w/o index 90.972 ms
