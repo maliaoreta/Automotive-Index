@@ -26,6 +26,7 @@
 -- SELECT * FROM car_models WHERE year = 2010;
 --  Runtime w/o index 46.596
 -- runtime w/index 37.847 ms
+-- runtime w/index in script 49.079 ms
 
 
 -- \i scripts/car_models.sql;
